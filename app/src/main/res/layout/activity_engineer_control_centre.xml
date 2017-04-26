@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.naushad.complaintmanager.EngineerControlCentre">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tbListingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolBarStyle"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btExpenseTracker"
+        android:layout_below="@id/tbListingMenu"
+        android:text="Expense Tracker" />
+
+    <Button
+        android:text="Complaint History"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btExpenseTracker"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btComplaintHistory" />
+
+    <Button
+        android:text="Engineer Profile"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btComplaintHistory"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btEngineerProfile" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btEngineerProfile"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btLogOut" />
+</RelativeLayout>

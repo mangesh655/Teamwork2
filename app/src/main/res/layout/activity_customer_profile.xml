@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.naushad.complaintmanager.customer_profile">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_full_open_on_phone"
+        android:id="@+id/ivEngineerProfileImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Naushad Shukoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivEngineerProfileImage"
+        android:layout_marginStart="24dp"
+        android:id="@+id/tvEngineerName"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"/>
+
+    <Button
+        android:text="AMC"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEngineerName"
+        android:layout_alignStart="@+id/tvEngineerName"
+        android:id="@+id/btEngineerType" />
+
+    <TextView
+        android:text="User Since: July 2013"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btEngineerType"
+        android:layout_alignStart="@+id/btEngineerType"
+        android:layout_marginTop="11dp"
+        android:id="@+id/tvUserSince" />
+
+    <TextView
+        android:text="Address:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvEngineerAddress"
+        android:id="@+id/tvAddress" />
+
+    <TextView
+        android:text="Sector 7,Phase I,\nPad. Dr. D. Y. Patil Vidyapeeth,\nNerul, Navi Mumbai, \nMaharashtra 400706"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvEngineerAddress"
+        android:layout_below="@+id/tvUserSince"
+        android:layout_toEndOf="@+id/tvAddress"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:text="Contact:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvEngineerContactNo"
+        android:id="@+id/tvContactNo" />
+
+    <TextView
+        android:text="+91 8898500640"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvEngineerContactNo"
+        android:layout_below="@+id/tvEngineerAddress"
+        android:layout_toEndOf="@+id/tvContactNo"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvEngineerEmail"
+        android:id="@+id/tvEmail" />
+
+    <TextView
+        android:text="naushadshukoor@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvEngineerEmail"
+        android:layout_below="@+id/tvEngineerContactNo"
+        android:layout_toEndOf="@+id/tvEmail"
+        android:layout_marginLeft="25dp"/>
+
+</RelativeLayout>

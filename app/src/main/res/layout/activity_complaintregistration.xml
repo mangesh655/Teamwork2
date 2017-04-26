@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilComplaintName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp">
+
+        <EditText
+            android:id="@+id/etComplaintName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Complaint Name"
+            android:textSize="20sp"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tvComplaintType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text=" Complaint Type:"
+            android:textSize="20sp" />
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary">
+        <Spinner
+            android:id="@+id/spinnerComplaintType"
+            style="@style/CustomSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal">
+    <Spinner
+        android:id="@+id/spinnerComplaintType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:spinnerMode="dropdown" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/spinner_stroke"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilComplaintDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp">
+
+        <EditText
+            android:id="@+id/etComplaintDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Complaint Details"
+            android:textSize="20sp"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btSubmitComplaint"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Complaint" />
+
+
+</LinearLayout>

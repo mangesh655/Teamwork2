@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Teamwork</string>
+
+    <string-array name="complaint_types">
+        <item>Network</item>
+        <item>Hardware</item>
+        <item>Software</item>
+    </string-array>
+    <string-array name="ComplaintHistoryRange">
+        <item>Last 6 months</item>
+        <item>Last 2 year</item>
+        <item>Last 5 year</item>
+    </string-array>
+    <string name="google_android_map_api_key">AIzaSyC3HxVeiGWl-Twut9JIsi2_k9F1eTnn42Q</string>
+    <string name="hint_email">Enter Email Address</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_link_to_register">Want to register</string>
+</resources>
