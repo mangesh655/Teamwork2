@@ -10,15 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.mikepenz.material_design_iconic_typeface_library.MaterialDesignIconic;
-import com.mikepenz.materialdrawer.AccountHeader;
-import com.mikepenz.materialdrawer.AccountHeaderBuilder;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.teamwork.R;
 
 /**
  * Created by Naushad on 23/01/2017.
@@ -26,11 +18,11 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 public class CustomerControlCentre extends AppCompatActivity {
     private Intent drawerintent = null;
-    public Drawer result = null;
-    private AccountHeader headerResult = null;
+    //public Drawer result = null;
+    //private AccountHeader headerResult = null;
     private static final int TIME_INTERVAL = 2000;
     private long mBackPressed;
-    private ProfileDrawerItem mainProfile;
+    //private ProfileDrawerItem mainProfile;
     Toolbar tbListingMenu;
     Toast ExitToast;
     Button btComplaintRegistration,btComplaintTracking,btCustomerProfile,btLogOut;
@@ -84,7 +76,7 @@ public class CustomerControlCentre extends AppCompatActivity {
         String user_email = getPrefs.getString("user_email", "naushadshukoor@gmail.com");
 
 
-        //Account Header for Material Drawer
+        /*//Account Header for Material Drawer
         headerResult = new AccountHeaderBuilder()
                 .withActivity(this)
                 .withHeaderBackground(R.color.colorPrimary)
@@ -198,6 +190,7 @@ public class CustomerControlCentre extends AppCompatActivity {
             }
             mBackPressed = System.currentTimeMillis();
         }
+        */
     }
 
 }

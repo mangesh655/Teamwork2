@@ -30,7 +30,6 @@ import java.util.Map;
 import teamwork.com.teamwork.app.AppController;
 import teamwork.com.teamwork.app.Config;
 import teamwork.com.teamwork.helper.SQLiteHandler;
-import teamwork.com.teamwork.helper.SessionManager;
 import teamwork.com.teamwork.util.NotificationUtils;
 
 public class ComplaintAcceptance extends AppCompatActivity {
@@ -39,7 +38,6 @@ public class ComplaintAcceptance extends AppCompatActivity {
     Button btnAccept, btnPass;
     private BroadcastReceiver mRegistrationBroadcastReceiver;
     private SQLiteHandler db;
-    private SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

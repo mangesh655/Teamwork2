@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
+import com.teamwork.R;
 
 import java.io.File;
 import java.text.SimpleDateFormat;

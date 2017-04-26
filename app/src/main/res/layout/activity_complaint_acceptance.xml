@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:weightSum="100"
     android:orientation="vertical"
-    tools:context="com.teamwork.teamwork.com.teamwork.activity.ComplaintAcceptance">
+    tools:context="teamwork.com.teamwork.activity.ComplaintAcceptance">
 
     <!-- Complaint Details start-->
 

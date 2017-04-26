@@ -1,6 +1,9 @@
 package teamwork.com.teamwork.activity;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -11,12 +14,13 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.teamwork.R;
 
 /**
  * Created by Naushad on 23/01/2017.
  */
 
-public class ComplaintTracking extends AppCompatActivity implements OnMapReadyCallback{
+public class ComplaintTracking extends AppCompatActivity implements OnMapReadyCallback {
 
     GoogleMap map;
     double latitude, longitude;
@@ -30,7 +34,7 @@ public class ComplaintTracking extends AppCompatActivity implements OnMapReadyCa
         init();
     }
 
-    private void init(){
+    private void init() {
         gps = new GPSTracker(ComplaintTracking.this);
         if (gps.canGetLocation()) {
             latitude = gps.getLatitude();
@@ -45,6 +49,7 @@ public class ComplaintTracking extends AppCompatActivity implements OnMapReadyCa
             e.printStackTrace();
         }
     }
+
     private void initilizeMap() {
         if (map == null) {
             MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
@@ -60,6 +65,16 @@ public class ComplaintTracking extends AppCompatActivity implements OnMapReadyCa
             CameraPosition cameraPosition = new CameraPosition.Builder().target(new LatLng(latitude, longitude)).zoom(17).build();
             map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
             map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             map.setMyLocationEnabled(true);
             map.setTrafficEnabled(true);
             map.setIndoorEnabled(true);

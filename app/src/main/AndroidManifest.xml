@@ -24,6 +24,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyACSWPjmWKrHyRjr-e15AeLDwBKoJbJslk"/>
+
         <!-- Firebase Notifications -->
         <service android:name="teamwork.com.teamwork.service.MyFirebaseMessagingService">
             <intent-filter>
@@ -37,26 +41,28 @@
         </service>
 
         <activity
-            android:name=".IntroActivity"
+            android:name="teamwork.com.teamwork.activity.IntroActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name="teamwork.com.teamwork.activity.SplashActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="teamwork.com.teamwork.activity.ComplaintRegistration"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <!-- ./Firebase Notifications -->
         <activity android:name="teamwork.com.teamwork.activity.MainActivity" />
         <activity android:name="teamwork.com.teamwork.activity.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="teamwork.com.teamwork.activity.ComplaintAcceptance">
             <intent-filter>

@@ -10,6 +10,8 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
+import com.teamwork.R;
+
 public class complaint_history extends AppCompatActivity {
 
     Spinner spinnerComplaintHistoryRange;

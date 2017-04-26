@@ -9,6 +9,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+
+import com.teamwork.R;
+
 public class SplashActivity extends AppCompatActivity {
 
     Thread timer;

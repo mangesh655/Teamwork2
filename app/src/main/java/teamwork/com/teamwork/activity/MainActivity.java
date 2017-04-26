@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
+import com.teamwork.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int TIME_INTERVAL = 2000;

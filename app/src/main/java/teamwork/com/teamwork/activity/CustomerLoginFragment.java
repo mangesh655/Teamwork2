@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.teamwork.R;
+
 
 /**
  * A simple {@link Fragment} subclass.

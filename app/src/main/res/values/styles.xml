@@ -8,6 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlNormal">@color/White</item>
         <item name="actionMenuTextColor">@color/White</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="android:navigationBarColor" tools:targetApi="21">@color/navigationBarColor</item>
     </style>
     <!-- Sliding Tab layout(for login screen-->

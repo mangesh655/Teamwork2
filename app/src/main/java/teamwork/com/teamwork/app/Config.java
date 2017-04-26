@@ -30,6 +30,8 @@ public class Config {
     public static final String RESULT_DATA_KEY = PACKAGE_NAME + ".RESULT_DATA_KEY";
 
     public static final String LOCATION_DATA_EXTRA = PACKAGE_NAME + ".LOCATION_DATA_EXTRA";
+    public static final String URL_SHOW_ADDRESS_BOOK = "http://192.168.0.7/ComplaintTracking/customer/showaddressbook.php";
+    public static final String SUBMIT_COMPLAINT = "http://192.168.0.7/ComplaintTracking/customer/submitcomplaint.php";
 
     // Server user login url
     public static String URL_LOGIN = "http://192.168.0.7/ComplaintTracking/inhouse/login.php";
